@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %} {{board.name}}{% endblock title %}
+     {% block body %}
+     <table  class="table table-striped">
+      <thead  class="table-secondary">
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          {% for board in boards %}
+          <td>{{board.name}}</td>
+          <td>{{board.description}}</td>
+        </tr>
+         {% endfor %}
+      </tbody>
+    </table>
+     {% endblock body %}
+    </div>
+    
+</body>
+</html>

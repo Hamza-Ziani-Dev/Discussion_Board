@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from boards.models import Board, Topic, Post
+from .models import Board,Topic,Post
 
 # Register your models here.
 admin.site.register(Board)
